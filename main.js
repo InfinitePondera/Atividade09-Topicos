@@ -1,36 +1,36 @@
 const R = require('ramda');
 
-function isEven(number) {
+const isEven = number => {
     const n = R.clone(number);
     n.even = n.value % 2 === 0;
     return n;
 }
 
-function positive(number) {
+const positive = number => {
     const n = R.clone(number);
     n.positive = n.value > 0;
     return n;
 }
 
-function isOdd(number) {
+const isOdd = number => {
     const n = R.clone(number);
     n.odd = n.value % 2 !== 0
     return n;
 }
 
-function negative(number) {
+const negative = number =>  {
     const n = R.clone(number);
     n.negative = n.value < 0;
     return n;
 }
 
-function isZero(number) {
+const isZero = number =>  {
     const n = R.clone(number);
     n.zero = n.value === 0;
     return n;
 }
 
-function isPrime(number) {
+const isPrime = number =>  {
     const n = R.clone(number);
     for (let i = 2; i < n.prime; i++) {
         if (n.prime % i === 0) {
@@ -40,7 +40,7 @@ function isPrime(number) {
     return n > 1;
 }
 
-function mapToNumberObject(num) {
+const mapToNumberObject = num =>  {
     return { value: num };
 }
 
@@ -53,6 +53,7 @@ arr = arr.map(arr).mapToNumberObject();
 // feito acima
 
 // ExercÃ­cio 3: refatore todas as funÃ§Ãµes para a forma usando arrow function (=>)
+
 
 // ExercÃ­cio 4: use R.pipe para compor as funÃ§Ãµes: isEven, positive, isOdd, negative, 
     // isZero, e isPrime. Teste a funÃ§Ã£o composta com um Ãºnico objeto.
