@@ -53,9 +53,10 @@ arr = arr.map(arr).mapToNumberObject();
 // feito acima
 
 // ExercÃ­cio 3: refatore todas as funÃ§Ãµes para a forma usando arrow function (=>)
-
+// feito acima
 
 // ExercÃ­cio 4: use R.pipe para compor as funÃ§Ãµes: isEven, positive, isOdd, negative, 
     // isZero, e isPrime. Teste a funÃ§Ã£o composta com um Ãºnico objeto.
+const arr = R.pipe(isEven(), positive(), isOdd(), negative(), isZero(), isPrime());
 
 // ExercÃ­cio 5: use a funÃ§Ã£o composta do Ex. 4 para transformar os nÃºmeros em 'arr'
