@@ -50,6 +50,7 @@ const arr = [-1, 50, 5, 10, -8, 20, 25, 0, 100, 14, -123];
 arr = arr.map(arr).mapToNumberObject();
 
 // ExercÃ­cio 2: seguindo o modelo das 2 primeiras funÃ§Ãµes implemente as outras 4 funÃ§Ãµes
+// feito acima
 
 // ExercÃ­cio 3: refatore todas as funÃ§Ãµes para a forma usando arrow function (=>)
 
